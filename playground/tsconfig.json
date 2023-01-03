@@ -1,0 +1,14 @@
+{
+	"extends": "../tsconfig.json",
+	"compilerOptions": {
+		"outDir": "dist",
+		"rootDir": ".",
+		"types": [
+			"vite/client",
+			"./src/typings/esbuild-url",
+			"./src/typings/shims-vue"
+		]
+	},
+	"include": ["./"],
+	"references": [{ "path": "../tsconfig.json" }]
+}

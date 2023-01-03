@@ -1,0 +1,18 @@
+{
+	"compilerOptions": {
+		"baseUrl": ".",
+		"outDir": "dist-typecheck",
+		"declarationDir": "dist-typecheck",
+		"rootDir": "src",
+		"lib": ["ES2021", "DOM"],
+		"types": ["vite/client", "node"],
+		"paths": {
+			"~/*": ["./src/*"]
+		}
+	},
+	"include": ["./src"],
+	"references": [
+		{ "path": "./tsconfig.node.json" },
+		{ "path": "../cli-helpers/tsconfig.json" }
+	]
+}
